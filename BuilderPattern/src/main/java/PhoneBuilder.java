@@ -31,6 +31,6 @@ public class PhoneBuilder {
     }
 
     public Phone getPhone() {
-        return new Phone("Android", 12, "Qualcomm Snapdragon", 4000, 6.4);
+        return new Phone(os, ramSize, processor, battery, screenSize);
     }
 }
