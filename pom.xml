@@ -12,6 +12,7 @@
         <module>FactoryPattern</module>
         <module>BuilderPattern</module>
         <module>AdapterDesign</module>
+        <module>Composite</module>
     </modules>
 
 
