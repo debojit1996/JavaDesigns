@@ -13,6 +13,7 @@
         <module>BuilderPattern</module>
         <module>AdapterDesign</module>
         <module>Composite</module>
+        <module>Prototype</module>
     </modules>
 
 
