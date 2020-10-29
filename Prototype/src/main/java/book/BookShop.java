@@ -39,7 +39,7 @@ public class BookShop implements Cloneable{
             getBooks().add(b);
         }
     }
-
+//The below clone method is for shallow cloning which is creating an object reference only
 //    @Override
 //    protected Object clone() throws CloneNotSupportedException {
 //        return super.clone();
