@@ -14,6 +14,7 @@
         <module>AdapterDesign</module>
         <module>Composite</module>
         <module>Prototype</module>
+        <module>Observer</module>
     </modules>
 
 
