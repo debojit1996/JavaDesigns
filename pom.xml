@@ -15,6 +15,7 @@
         <module>Composite</module>
         <module>Prototype</module>
         <module>Observer</module>
+        <module>SingletonDesign</module>
     </modules>
 
 
