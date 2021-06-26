@@ -1,9 +1,22 @@
 package com.debo.design;
 
+import java.util.Objects;
+
 public class SingleTon {
 
     // Early/Eager initialization
-    private static SingleTon singleTon = new SingleTon();
+//    private static SingleTon singleTon = new SingleTon();
+
+    // By not initializing the object here, we are doing Lazy initialization, which can save
+    // a lot of memory if this class's instance is never used via the getInstance method. But even with
+    // lazy initialization, we are left with issue which may break the singleton characteristic
+    // of this class, i.e., if we have two threads which are calling this getInstance method at the
+    // same time. It might possible happen that both the threads executes the null check
+    // Objects.isNull(singleTon) at the same time, which indeed you give two different instances
+    // of this class SingleTon instead of a shared one. This could happen coz we are not applying
+    // the synchronized keyword on the method or block of code which needs protection to avoid
+    // creation of multiple instances.
+    private static SingleTon singleTon;
     private int hello = 7;
 
     private SingleTon() {
@@ -11,6 +24,9 @@ public class SingleTon {
     }
 
     public static SingleTon getInstance() {
+        if (Objects.isNull(singleTon)) {
+            singleTon = new SingleTon();
+        }
         return singleTon;
     }
 
