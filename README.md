@@ -13,4 +13,26 @@
       * Create a static private instance of the class within the same class.
       * Next, create a static private method which will return this static instance created.
    * Now if we follow the above three steps and try to access the class instance using ClassName.staticInstanceName, we 
-      will always be referring to same static instance no matter how many object references we create.  
+      will always be referring to same static instance no matter how many object references we create. 
+   * **Double Checked Logging:**
+     See what is happening is as navin said that if we are in a thread and let's assume we created 100 threads and if we
+     use synchronized getInstance() method, then the 1st thread has to be over then only the 2nd thread will continue 
+     it's work and so on. So there is no Multithreading. If previously it took 1 second total to complete the work in 
+     thread, now it will take 100 seconds.
+     So guys why not we just ask the 1st time thread to hold on all the threads working on it and as soon as 1st thread 
+     is done with it's work we ask all the remaining 99 threads to work on it simultaneously, This way 1st thread takes 
+     1 second and all 99 threads will take 1 second in total only. So how to do it?
+     First we check if the thread is 1st thread or not so the 1st (obj == null) if statement in video. If it's not 1st 
+     it will continue and return the old obj.
+     Now if it's first, we will tell other threads to stop there work till 1st thread has done it's work. So we write 
+     synchronized function and in it we do error checking just in case (that's why we have two (obj == null). so 1st 
+     thread will create a new instance of the class, then say to all other thread my work is done do your work now 
+     simultaneously!!
+     
+     So back to question: Why not use synchronized block just above the first null check
+     *Ans:* Because if you do that it will stop all threads each and every time, as explained above and cause more time
+     for task to finish and if you do it the way he did it, then only 1st thread will ask other threads to stop for it 
+     to finish it's work.
+
+     Question: Why second check is required?? I mean obj null check??
+     *Ans:* Just to be extra sure, I think so
