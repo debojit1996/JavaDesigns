@@ -1,7 +1,12 @@
 package book;
 
-import book.BookShop;
 
+/*
+     1. This is a creational design pattern
+     2. This pattern is suitable when we need to perform IO read operations or some database reads repetitively
+     for multiple objects. We can connect to the IO destination or DB once for fetching the data and then remaining
+     objects can simply perform deep cloning to get the same data faster.
+*/
 public class PrototypeDriver {
     public static void main(String[] args) throws CloneNotSupportedException {
         BookShop bookShop = new BookShop();

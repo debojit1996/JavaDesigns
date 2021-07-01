@@ -1,5 +1,8 @@
 public class CompositeDriver {
-
+    /*
+     1. This is a creational design pattern
+     2. This pattern is suitable when we need to maintain hierarchy of objects
+     */
     public static void main(String[] args) {
         Component hdd = new Leaf(3600, "HDD");
         Component mouse = new Leaf(250, "Mouse");
