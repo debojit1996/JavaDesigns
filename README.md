@@ -36,6 +36,19 @@
 
      Question: Why second check is required?? I mean obj null check??
      *Ans:* Just to be extra sure, I think so
+     
+* **Abstract Factory Design Pattern:**
+   * Creational Design pattern
+   * This pattern provides an interface for creating families of related or dependent objects without specifying their 
+    concrete classes.
+   * It's like a super factory which creates other factories.
+   * Choose this pattern when:
+      * The application needs to create multiple families of objects. Say for example, in transformers we used Factory 
+        design pattern to create one family of transformers based on filename. Now may be we want to create one more 
+        family of transformer objects based on some other property.
+      * We need to use only one subset of families of objects at a given point of time.
+      * We want to hide implementation of the families of objects by decoupling the implementation of each of these 
+        operations.
 
 * **Structural Design Pattern:**
    * ***Proxy Design Pattern***
