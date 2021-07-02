@@ -1,5 +1,5 @@
-import pilot.PilotPen;
 
+// Adapter is a structural design pattern
 public class School {
     public static void main(String[] args) {
         Pen pen = new PenAdapter();

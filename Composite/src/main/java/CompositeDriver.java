@@ -1,6 +1,6 @@
 public class CompositeDriver {
     /*
-     1. This is a creational design pattern
+     1. This is a structural design pattern
      2. This pattern is suitable when we need to maintain hierarchy of objects
      */
     public static void main(String[] args) {

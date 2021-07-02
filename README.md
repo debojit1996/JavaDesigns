@@ -36,3 +36,13 @@
 
      Question: Why second check is required?? I mean obj null check??
      *Ans:* Just to be extra sure, I think so
+
+* **Structural Design Pattern:**
+   * ***Proxy Design Pattern***
+      * This design pattern simply adds an extra layer of abstraction for our actual implementation. For example, say
+   while executing Delete query in database we need ADMIN access. So, we can write a proxy class where we evaluate the
+   access rights of a user performing delete and based on the user role, we call the actual class which would execute the
+   database query. 
+      * This proxy class would always be called first (just like we do in pinc-org-service where we evaluate access 
+        rights of a user for any UPSERT operation) to evaluate access rights and if the user doesn't have enough rights,
+        we would throw an exception. 
