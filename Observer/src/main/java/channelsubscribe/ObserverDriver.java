@@ -1,3 +1,9 @@
+package channelsubscribe;
+
+import channelsubscribe.Channel;
+import channelsubscribe.Subject;
+import channelsubscribe.Subscriber;
+
 // This is behavioral design pattern
 public class ObserverDriver {
     public static void main(String[] args) {

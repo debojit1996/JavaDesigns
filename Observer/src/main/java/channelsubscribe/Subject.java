@@ -1,3 +1,5 @@
+package channelsubscribe;
+
 public interface Subject {
     void subscribe(Observer subscriber);
 

@@ -1,3 +1,7 @@
+package channelsubscribe;
+
+import channelsubscribe.Channel;
+
 public class Subscriber implements Observer {
     private String name;
     private Subject channel = new Channel();
