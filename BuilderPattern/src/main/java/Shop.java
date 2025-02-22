@@ -17,7 +17,7 @@ public class Shop {
         Phone phone = new PhoneBuilder()
                 .setOs("Android")
                 .setProcessor("Qualcomm Snapdragon 765G")
-                .getPhone();
+                .build();
         System.out.println(phone);
     }
 }

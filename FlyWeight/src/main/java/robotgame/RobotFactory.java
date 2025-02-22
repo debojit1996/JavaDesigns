@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public class RobotFactory {
 
-    public static Map<String, IRobot> robotTypeToIRobotMap = new HashMap<>();
+    private static final Map<String, IRobot> robotTypeToIRobotMap = new HashMap<>();
 
     public static Optional<IRobot> createRobot(String type) {
         if (robotTypeToIRobotMap.containsKey(type)) {

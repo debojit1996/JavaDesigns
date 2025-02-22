@@ -30,7 +30,7 @@ public class PhoneBuilder {
         return this;
     }
 
-    public Phone getPhone() {
+    public Phone build() {
         return new Phone(os, ramSize, processor, battery, screenSize);
     }
 }
