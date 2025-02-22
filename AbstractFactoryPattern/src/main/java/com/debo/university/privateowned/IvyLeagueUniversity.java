@@ -2,14 +2,14 @@ package com.debo.university.privateowned;
 
 import com.debo.university.University;
 import com.debo.university.UniversityFactory;
-import com.debo.university.admit.AdmitCard;
-import com.debo.university.admit.privateowned.CalTechAdmitCard;
-import com.debo.university.admit.privateowned.GeorgiaTechAdmitCard;
-import com.debo.university.admit.privateowned.MITAdmitCard;
-import com.debo.university.fee.FeeCalculator;
-import com.debo.university.fee.privateowned.CalTechFeeCalculator;
-import com.debo.university.fee.privateowned.GeorgiaTechFeeCalculator;
-import com.debo.university.fee.privateowned.MITFeeCalculator;
+import com.debo.university.AdmitCard;
+import com.debo.university.privateowned.admit.CalTechAdmitCard;
+import com.debo.university.privateowned.admit.GeorgiaTechAdmitCard;
+import com.debo.university.privateowned.admit.MITAdmitCard;
+import com.debo.university.FeeCalculator;
+import com.debo.university.privateowned.fee.CalTechFeeCalculator;
+import com.debo.university.privateowned.fee.GeorgiaTechFeeCalculator;
+import com.debo.university.privateowned.fee.MITFeeCalculator;
 
 public class IvyLeagueUniversity extends UniversityFactory implements University {
     @Override

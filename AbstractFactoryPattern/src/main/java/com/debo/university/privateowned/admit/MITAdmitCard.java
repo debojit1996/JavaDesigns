@@ -1,6 +1,6 @@
-package com.debo.university.admit.privateowned;
+package com.debo.university.privateowned.admit;
 
-import com.debo.university.admit.AdmitCard;
+import com.debo.university.AdmitCard;
 
 public class MITAdmitCard extends AdmitCard {
     @Override

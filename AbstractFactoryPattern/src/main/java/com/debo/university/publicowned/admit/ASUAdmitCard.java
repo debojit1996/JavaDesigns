@@ -1,6 +1,6 @@
-package com.debo.university.admit.publicowned;
+package com.debo.university.publicowned.admit;
 
-import com.debo.university.admit.AdmitCard;
+import com.debo.university.AdmitCard;
 
 public class ASUAdmitCard extends AdmitCard {
     @Override

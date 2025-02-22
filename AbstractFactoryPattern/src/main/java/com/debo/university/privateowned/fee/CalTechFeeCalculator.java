@@ -1,6 +1,6 @@
-package com.debo.university.fee.privateowned;
+package com.debo.university.privateowned.fee;
 
-import com.debo.university.fee.FeeCalculator;
+import com.debo.university.FeeCalculator;
 
 public class CalTechFeeCalculator extends FeeCalculator {
     @Override

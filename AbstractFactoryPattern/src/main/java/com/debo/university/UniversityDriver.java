@@ -1,8 +1,5 @@
 package com.debo.university;
 
-import com.debo.university.admit.AdmitCard;
-import com.debo.university.fee.FeeCalculator;
-
 public class UniversityDriver {
     public void fetchUniversityAndFeeDetails(int score, String subject) {
         University university = UniversityFactory.getUniversityInstance(score);

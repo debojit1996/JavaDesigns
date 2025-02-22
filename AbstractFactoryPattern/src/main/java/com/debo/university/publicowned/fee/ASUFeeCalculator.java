@@ -1,6 +1,6 @@
-package com.debo.university.fee.publicowned;
+package com.debo.university.publicowned.fee;
 
-import com.debo.university.fee.FeeCalculator;
+import com.debo.university.FeeCalculator;
 
 public class ASUFeeCalculator extends FeeCalculator {
     @Override
